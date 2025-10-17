@@ -38,6 +38,14 @@ services:
     depends_on:
       - db
 
+  frontend:
+    build: ./frontend
+    container_name: odin-frontend
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
 volumes:
   mysql_data: {}
-  
