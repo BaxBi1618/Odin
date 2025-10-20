@@ -1,6 +1,11 @@
+import React from "react";
+import ArticleList from "./components/articleList";
+
 function App() {
     return(
-        <h1>Dziala</h1>
+            <div>
+                <ArticleList />  {/* tutaj wyświetlamy listę artykułów */}
+            </div>
     )
 }
 
