@@ -1,11 +1,17 @@
-import React from "react";
-import ArticleList from "./components/articleList";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ArticlePage from "./pages/ArticlePage";
+import Header from "./components/Header";
 
 function App() {
     return(
-            <div>
-                <ArticleList />  {/* tutaj wyświetlamy listę artykułów */}
-            </div>
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/articles" element={<ArticlePage />} />
+            </Routes>
+        </Router>
     )
 }
 
