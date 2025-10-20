@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/functions";
+/*zmienne*/
+$primary: rgb(13 27 42);
+$secondary:rgb(146 7 3);
+$info:rgb(233 196 0);
+$success:rgb(85, 166, 48);
+$warning:rgb(255, 77, 109);
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/bootstrap";
+
+/*globals*/
+
+body{
+  background-color: rgb(19 19 21);
+}
